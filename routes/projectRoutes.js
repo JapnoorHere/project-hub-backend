@@ -26,4 +26,8 @@ router.put('/:projectId/complete', projectController.completeProject);
 
 router.post('/:projectId/tasks', taskController.createTask);
 
+// routes/projectRoutes.js
+// Add this route to handle adding members
+router.put('/:projectId/members', projectController.addMembers);
+
 module.exports = router;
